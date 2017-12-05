@@ -1,5 +1,5 @@
 class Artist
-  @@song_count = 0
+  # @@song_count = 0
 
   attr_accessor :name
   attr_reader :songs
@@ -12,9 +12,9 @@ class Artist
   def add_song(song)
     @songs << song
     song.artist = self
-    # @@song_count += 1
   end
 
+  # @@song_count += 1
   # def add_song_by_name(name)
   #   song = Song.new(name)
   #   @songs << song
