@@ -11,7 +11,9 @@ class Artist
 
   def add_song(song)
     @songs << song
+    puts "#{songs}"
     song.artist = self
+    puts "#{song.artist}"
     # @@song_count += 1
   end
 
